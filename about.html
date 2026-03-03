@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About | Zawedde Annet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="navbar">
+        <div class="logo">ZAWEDDE ANNET</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</header>
+
+<section>
+    <h2>About Me</h2>
+    <p style="max-width:700px;margin:auto;text-align:center;">
+        I am an IT final year student passionate about building modern, responsive, and clean websites. 
+        I specialize in HTML, CSS, and Bootstrap, and enjoy creating user-friendly interfaces. 
+        My goal is to become a professional software developer and contribute to impactful digital solutions.
+    </p>
+
+    <div class="card-container" style="margin-top:40px;">
+        <div class="card">
+            <h3>HTML</h3>
+            <p>Expert in building semantic, responsive, and accessible HTML pages.</p>
+        </div>
+        <div class="card">
+            <h3>CSS</h3>
+            <p>Skilled in modern CSS techniques including Flexbox, Grid, and animations.</p>
+        </div>
+        <div class="card">
+            <h3>Bootstrap</h3>
+            <p>Experienced in building responsive layouts quickly using Bootstrap framework.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Zawedde Annet</p>
+</footer>
+
+<script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+</script>
+
+</body>
+</html>

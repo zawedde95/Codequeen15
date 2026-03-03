@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu · QuickBite</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="container nav-container">
+        <div class="logo">
+            <a href="index.html">QuickBite</a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</header>
+
+<!-- Page Header -->
+<section class="page-header">
+    <div class="container">
+        <h1>Our Menu</h1>
+        <p>Freshly prepared dishes for every taste</p>
+    </div>
+</section>
+
+<!-- Menu Categories -->
+<section class="menu-section">
+    <div class="container">
+        <h2 class="category-title">Pizzas</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Margherita">
+                <div class="item-details">
+                    <h3>Margherita</h3>
+                    <p>Tomato sauce, mozzarella, fresh basil</p>
+                    <span class="item-price">$12.99</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1574126154517-d1e0d89ef734?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Pepperoni">
+                <div class="item-details">
+                    <h3>Pepperoni</h3>
+                    <p>Tomato sauce, mozzarella, pepperoni</p>
+                    <span class="item-price">$14.99</span>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="category-title">Burgers</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Classic Burger">
+                <div class="item-details">
+                    <h3>Classic Burger</h3>
+                    <p>Beef patty, lettuce, tomato, special sauce</p>
+                    <span class="item-price">$9.99</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1553979459-d2229ace743c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Chicken Burger">
+                <div class="item-details">
+                    <h3>Chicken Burger</h3>
+                    <p>Grilled chicken, avocado, ranch sauce</p>
+                    <span class="item-price">$10.99</span>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="category-title">Sushi</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Sushi Platter">
+                <div class="item-details">
+                    <h3>Sushi Platter</h3>
+                    <p>Assorted fresh sushi with wasabi and ginger</p>
+                    <span class="item-price">$18.99</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1617196035154-1e7e6e28b0db?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="California Roll">
+                <div class="item-details">
+                    <h3>California Roll</h3>
+                    <p>Crab, avocado, cucumber</p>
+                    <span class="item-price">$8.99</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container footer-content">
+        <div class="footer-info">
+            <h3>QuickBite</h3>
+            <p><i class="fas fa-map-marker-alt"></i> Kampala, Uganda</p>
+            <p><i class="fas fa-phone"></i> +256 700 123456</p>
+            <p><i class="fas fa-envelope"></i> hello@quickbite.com</p>
+        </div>
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <h4>Follow Us</h4>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 QuickBite. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+</script>
+
+</body>
+</html>

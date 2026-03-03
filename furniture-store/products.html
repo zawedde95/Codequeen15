@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products · Modern Living</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="container nav-container">
+        <div class="logo">
+            <a href="index.html">Modern Living</a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</header>
+
+<!-- Page Header -->
+<section class="page-header">
+    <div class="container">
+        <h1>Our Products</h1>
+        <p>Quality furniture for every room</p>
+    </div>
+</section>
+
+<!-- Products Grid -->
+<section class="products-listing">
+    <div class="container">
+        <div class="products-grid">
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Sofa">
+                <h3>Harmony Sofa</h3>
+                <p>Plush fabric, solid wood frame, available in 3 colors.</p>
+                <div class="price">$899</div>
+                <a href="contact.html" class="btn-small">Inquire</a>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1532372320572-cda25653a694?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Dining Table">
+                <h3>Oak Dining Table</h3>
+                <p>Solid oak, seats 6, natural or walnut finish.</p>
+                <div class="price">$1,299</div>
+                <a href="contact.html" class="btn-small">Inquire</a>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1523194258983-4ef0203f0c47?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Bed">
+                <h3>Serenity Bed</h3>
+                <p>Upholstered headboard, wood slats, king/queen sizes.</p>
+                <div class="price">$1,599</div>
+                <a href="contact.html" class="btn-small">Inquire</a>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1592078615290-033ee584e267?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Bookshelf">
+                <h3>Modular Bookshelf</h3>
+                <p>Customizable shelves, oak or white finish.</p>
+                <div class="price">$699</div>
+                <a href="contact.html" class="btn-small">Inquire</a>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Coffee Table">
+                <h3>Marble Coffee Table</h3>
+                <p>White marble top, brass legs, modern design.</p>
+                <div class="price">$549</div>
+                <a href="contact.html" class="btn-small">Inquire</a>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1484101403633-562f891dc89a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Armchair">
+                <h3>Cozy Armchair</h3>
+                <p>Velvet upholstery, swivel base, multiple colors.</p>
+                <div class="price">$399</div>
+                <a href="contact.html" class="btn-small">Inquire</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container footer-content">
+        <div class="footer-info">
+            <h3>Modern Living</h3>
+            <p><i class="fas fa-map-marker-alt"></i> Kampala, Uganda</p>
+            <p><i class="fas fa-phone"></i> +256 700 123456</p>
+            <p><i class="fas fa-envelope"></i> hello@modernliving.com</p>
+        </div>
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <h4>Follow Us</h4>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Modern Living. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+</script>
+
+</body>
+</html>

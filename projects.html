@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projects | Zawedde Annet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="navbar">
+        <div class="logo">ZAWEDDE ANNET</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</header>
+
+<section>
+    <h2>My Projects</h2>
+
+    <div class="card-container">
+        <div class="card">
+            <h3>Hotel Website</h3>
+            <p>A professional hotel website with booking interface, modern design, and responsive layout.</p>
+            <a href="#" class="btn">View Project</a>
+        </div>
+        <div class="card">
+            <h3>Portfolio Website</h3>
+            <p>A personal portfolio website showcasing skills, projects, and experience using HTML & CSS.</p>
+            <a href="#" class="btn">View Project</a>
+        </div>
+        <div class="card">
+            <h3>Landing Page</h3>
+            <p>A clean, modern landing page for business promotion and client engagement.</p>
+            <a href="#" class="btn">View Project</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Zawedde Annet</p>
+</footer>
+
+<script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+</script>
+
+</body>
+</html>
